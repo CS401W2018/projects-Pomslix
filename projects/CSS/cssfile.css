@@ -1,0 +1,54 @@
+#default{
+    font-size: 16pt;
+    color: #3bba9c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.break{
+        border: 1px solid #4c5070;
+        width: 100%;
+        margin: 20px auto;
+}
+.title{
+        font-family: 'Courier New', Courier, monospace;
+        color: #788bf7;
+}
+
+.background{
+    background-color: #2e3047;
+}
+
+.Highlight{
+        font-family: 'Courier New', Courier, monospace;
+        color: #788bf7;
+        text-decoration-line: underline;
+}
+
+.credit{
+    color: #00ffff;
+}
+
+.link{
+        border: 2px solid rgb(224, 217, 217);
+        background-color: rgb(224, 217, 216);
+        text-decoration: none;
+        color: rgb(61, 74, 255);
+}
+
+.emphasize{
+    font-weight: bold;
+    color: #3fddb8;
+}
+
+.de-emphasize{
+    font-weight: bold;
+    color: #3bba9c;
+}
+
+.question{
+        color: #e2fffe;
+}
+
+.answer{
+        color: #e2fffe;
+}
