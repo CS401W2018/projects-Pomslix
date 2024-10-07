@@ -52,6 +52,5 @@
 .background{
     background-image: url(./Images/usa.png);
     background-repeat: no-repeat;
-    background-position: right;
-    margin-right: 20px;
+    background-position: 10in;
 }
