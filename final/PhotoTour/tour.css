@@ -48,3 +48,10 @@
 .alt{
     color: rgb(247, 90, 0);
 }
+
+.background{
+    background-image: url(./Images/usa.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 20px;
+}
