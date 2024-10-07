@@ -1,0 +1,50 @@
+.default{
+    font-size: 16pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    background-image: url(./Images/image.png);
+}
+
+.title{
+    color: rgb(39, 94, 245);
+}
+.border{
+    border: 1px solid rgb(2, 2, 2);
+    width: 100%;
+    background-color: black;
+}
+
+.tab{
+    background-color: white;
+    border: 2px solid rgb(230, 221, 221);
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+}
+
+.current{
+    background-color: rgb(226, 217, 217);
+    border: 2px solid rgb(170, 168, 168);
+}
+
+.text{
+    color: rgb(70, 51, 51);
+    border: 2px solid black;
+    background-color: white;
+    height: 100%;
+    width: 775px;
+}
+
+.image{
+    float: right;
+    margin-right: 20px;
+}
+
+.space{
+    margin-bottom: 10px;
+    font-size: 24px;
+    list-style-image: url(./Images/eagle.svg.png);
+}
+
+.alt{
+    color: rgb(247, 90, 0);
+}
