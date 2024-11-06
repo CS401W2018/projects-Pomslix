@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="processing.html" method="post"><br>
+           First Name <input type="text" name="first" value="Joe" required="required"><br>
+           Last Name <input type="text" name="last"><br>
+           Password <input type="password" name="pass"><br>
+           <input type="checkbox" id="watermelon">
+           <label for="watermelon">I like water melon</label><br>
+           <input type="radio" id="pepsi" name="fav_drink">
+           <label for="pepsi">pepsi</label>
+           <input type="radio" id="cola" name="fav_drink">
+           <label for="cola">coca-cola</label><br>
+           Grade: <br>
+           <input type="radio" name="grade" value="Freshman">Freshman <br>
+           <input type="radio" name="grade" value="Sophmore">Sophmore <br>
+           <input type="radio" name="grade" value="Junior">Junior <br>
+           <input type="radio" name="grade" value="Senior">Senior <br>
+           <select name="state" id="state">
+            <option value="Blank">blank</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="California">California</option>
+            <option value="Utah">Utah</option>
+            <option value="Texas">Texas</option>
+           </select>
+           <textarea name="comment" id="text"></textarea>
+           <input type="submit"><br>
+        </form>
+    </main>
+    <div>
+        <h1>Questions</h1>
+        <ul>
+            <li>The action attribute is used by forms when the form is sumbit similar to a link.</li>
+            <li>The method attribute is used by forms on how the method of data is sent from the form.</li>
+            <li>When using a GET, all the information is put on the address bar such as your password. Post doesnt do that. POST is used to change a information, and GET is used to read something.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jameson Shi</p>
+    </footer>
+</body>
+</html>
