@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Web Design Form</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <Label for="fname">First Name:</Label>
+                    <input id="fname" type="text" name="first" required="required">
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last Name:</label>
+                    <input id="lname" type="text" name="last">
+                </div>
+                <div class="form-row">
+                    <Label for="pword">Password:</Label>
+                    <input id="pword" type="password" name="pass">
+                </div>
+                <div class="check-row">
+                    <div>
+                        <input type="checkbox" id="watermelon">
+                        <label for="watermelon">I like water melon</label>
+                    </div>
+                </div>
+                <div class="check-row">
+                    <input type="radio" id="pepsi" name="fav_drink">
+                    <label for="pepsi">pepsi</label>
+                    <input type="radio" id="cola" name="fav_drink">
+                    <label for="cola">coca-cola</label>
+                </div>
+                <div class="form-row">
+                    <label for="grade">Grade:</label>
+                    <label for="grade"><input id="grade" type="radio" name="grade" value="Freshman">Freshman</label>
+                    <label for="grade"><input id="grade" type="radio" name="grade" value="Freshman">Sophmore</label>
+                    <label for="grade"><input id="grade" type="radio" name="grade" value="Freshman">Junior</label>
+                    <label for="grade"><input id="grade" type="radio" name="grade" value="Freshman">Senior</label>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="Blank">&nbsp;</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Texas">Texas</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="text">Comments </label>
+                    <textarea name="comment" id="text"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <div>
+        <h1>Questions(Wednesday)</h1>
+        <ul>
+            <li>The action attribute is used by forms when the form is sumbit similar to a link.</li>
+            <li>The method attribute is used by forms on how the method of data is sent from the form.</li>
+            <li>When using a GET, all the information is put on the address bar such as your password. Post doesnt do
+                that. POST is used to change a information, and GET is used to read something.</li>
+        </ul>
+        <h1>Questions(Friday)</h1>
+        <ul>   
+            <li>Different ways you can style your form is by using the "fieldset" tag, using CSS and styling the background of Fieldset. Another way is using Flex/Grid.</li>
+            <li>The Professor likes to use flex because like the name implies, it is very flexible in customizing web pages and very easy to use.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jameson Shi</p>
+    </footer>
+</body>
+
+</html>
