@@ -1,0 +1,123 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(230, 209, 209);
+}
+
+header{
+    color: rgb(100, 199, 43);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+fieldset{
+    margin: 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+div fieldset{
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgb(216, 234, 250);
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+}
+
+.checkbox{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.checkbox textarea{
+    border-radius: 3px;
+    background: rgb(255, 251, 240);
+    border: thin solid black;
+}
+
+.credentials label{
+    width: 150px;
+    text-align: right;
+}
+
+.row input{
+    border-radius: 3px;
+    background: rgb(255, 251, 240);
+}
+
+.title{
+    border: thin solid black;
+    padding: 5px;
+    font-weight: bold;
+    background-color: rgb(84, 170, 250);
+    border-radius: 5px;
+}
+
+.final{
+    margin-left: 10%;
+}
+
+footer{
+    color: rgb(0, 153, 255);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 5px;
+    }
+    
+    body{
+        font-size: 20px;
+    }
+
+    .row input{
+        padding: 8px;
+        font-size: 1.5em;
+    }
+
+    div fieldset{
+        width: 93%;
+        margin: 20px auto;
+        background-color: rgb(216, 234, 250);
+    }
+    
+    .credentials label{
+        width: 0;
+    }
+
+    .checkbox textarea{
+        padding: 20px;
+    }
+
+    .row select{
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .row input[type='radio']{
+        height: 30px;
+        width: 30px;
+        vertical-align: top;
+    }
+
+    .remember input[type='checkbox']{
+        height: 25px;
+        width: 25px;
+        vertical-align: middle;
+    }
+
+    .drink{
+        font-size: 30px;
+    }
+
+    .final{
+        margin: 0 auto;
+    }
+}
