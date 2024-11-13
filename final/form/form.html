@@ -13,7 +13,7 @@
         <h1>Web Design Form</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
@@ -81,10 +81,47 @@
             <li>Different ways you can style your form is by using the "fieldset" tag, using CSS and styling the background of Fieldset. Another way is using Flex/Grid.</li>
             <li>The Professor likes to use flex because like the name implies, it is very flexible in customizing web pages and very easy to use.</li>
         </ul>
+        <h1>Questions(Wednesday 11/13/24)</h1>
+        <ul>
+            <li>What is JavaScript? How did it get its name?</li>
+            <ul>
+                <li>JavaScript is a programming language was invented in the 1900s by Sun Microsystems, it was invented to run inside browsers. <br>
+                    They created JavaScript as a programming language to be used with Java in the fore front.
+                </li>
+            </ul>
+            <li>What are the two ways you can run JavaScript?</li>
+            <ul>
+                <li>JavaScript is used in browsers inside computers. They can be run in the DOM(Document Object Model) or in node.js</li>
+            </ul>
+            <li>What was the most popular front-end js library?</li>
+            <ul>
+                <li>What was the most popular front-end js library was "jQuery".</li>
+            </ul>
+            <li>What is the most popular front-end js library today?</li>
+            <ul>
+                <li>The most popular front-end js library today is "react".</li>
+            </ul>
+        </ul>
     </div>
     <footer>
         <p>&copy; 2024 Jameson Shi</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            const firstName = document.getElementById('fname').value;
+            const lastName = document.getElementById('lname').value;
+            const formData = {
+                firstName: firstName,
+                lastName: lastName
+            }
+            if (!firstName || !lastName){
+                alert("First name and last name required!");
+                return;
+            }
+            console.log(formData);
+            alert("You submitted the form!")
+        })
+    </script>
 </body>
-
 </html>
