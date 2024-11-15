@@ -13,6 +13,7 @@
         <h1>Web Design Form</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
@@ -102,26 +103,17 @@
                 <li>The most popular front-end js library today is "react".</li>
             </ul>
         </ul>
+        <h1>Questions(Wednesday 11/15/24)</h1>
+        <ul>
+            <li>What is AJAX?</li>
+            <ul><li>AJAX(Asynchronous JavaScript and XML) is used to send and receive data more responsively without changing or reloading the whole page. It is also more dynamic.</li></ul>
+            <li>Why do you put your JS Code in a separate file?</li>
+            <ul><li>We put JS Code in a separate file because it seperates the HTML and javascript codes. Thus making it easier to read and store codes. The file will be cached thus it can speed up page loading.</li></ul>
+        </ul>
     </div>
     <footer>
         <p>&copy; 2024 Jameson Shi</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event) {
-            event.preventDefault();
-            const firstName = document.getElementById('fname').value;
-            const lastName = document.getElementById('lname').value;
-            const formData = {
-                firstName: firstName,
-                lastName: lastName
-            }
-            if (!firstName || !lastName){
-                alert("First name and last name required!");
-                return;
-            }
-            console.log(formData);
-            alert("You submitted the form!")
-        })
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
