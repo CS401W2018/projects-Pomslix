@@ -32,8 +32,12 @@ document.getElementById('Form').addEventListener('submit',function(event) {
         alert("Password required!")
         return;
     }
+    if(pass.length < 8){//brother slade said that this is okay for "Check a number field to make sure the number is within a certain range. Either greater than or less than a certain number."
+        alert("Password has to be at least 8 character long!")
+        return;
+    }
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "sumbit.json", true);
+    xhr.open("GET", "sumbit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
     xhr.onreadystatechange = function (){
         if (xhr.readyState === 4 && xhr.status === 200) {
