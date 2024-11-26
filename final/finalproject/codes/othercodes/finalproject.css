@@ -1,0 +1,180 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(139, 137, 190);
+    margin: 0;
+}
+
+header{
+    background-color: rgb(61, 48, 73);
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+header h1{
+    margin: 0;
+    color: rgb(9, 255, 0);
+    padding-left: 10px;
+}
+
+.perfect{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.current{
+    background-color: rgb(58, 192, 192);
+}
+
+nav div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 15px auto;
+    gap: 1%;
+    width: 105%;
+}
+
+nav div a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(54, 169, 204);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+nav div a:hover{
+    background-color: rgb(37, 211, 211);
+}
+
+.headcenter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div h1{
+    background-color: rgb(196, 87, 87);
+    font-size: 2em;
+    border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.hd{
+    background-color: (196, 87, 87);
+    font-size: 2.2em;
+    border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.welcome{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.849);
+    width: 98%;
+    border-radius: 15px;
+    justify-content: center;
+    padding:10px;
+    margin: 0 auto;
+}
+
+.style{
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+
+}
+
+.content{
+    display: flex;
+    flex-flow: column;
+    background-color: rgba(255, 255, 255, 0.849);
+    width: 96%;
+    border-radius: 15px;
+    justify-content: center;
+    padding:10px;
+    margin: 10px auto;
+}
+
+.picture{
+    width: 200px;
+    height: 125px;
+}
+
+table{
+    border: thick solid black;
+    margin: 0 auto;
+    font-size: 25px;
+    width: 97.25%;
+    border-radius: 10px;
+}
+
+caption{
+    font-size: 30px;
+    background-color: rgb(196, 87, 87);
+    border-radius: 15px;
+    margin: 5px;
+}
+
+table thead, table tfoot{
+    background-color: rgb(221, 221, 218);
+}
+
+table tbody tr:nth-child(1){
+    background-color:  rgb(28, 223, 28);
+}
+
+table tbody tr:nth-child(2){
+    background-color: rgb(226, 37, 37);
+}
+
+table tbody tr:nth-child(3){
+    background-color: rgb(255, 209, 3);
+}
+
+
+@media only screen and (max-width: 700px){
+    
+    header{
+        background-color: rgb(61, 48, 73);
+        font-size: 1.5em;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    nav div{
+        display: flex;
+        flex-flow: column;
+        margin: 0 auto;
+        width: 100%;
+        gap: 2px;
+    }
+
+    .perfect{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: normal;
+    }
+
+    .style{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+
+    .content{
+        width: 90%;
+    }
+
+    .welcome{
+        width: 90%;
+    }
+}
