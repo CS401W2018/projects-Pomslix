@@ -25,29 +25,70 @@
             </div>
         </nav>
         <main>
-                <div class="headcenter">
-                    <h1 class="hd"> Sign Up Page</h1>
-                </div>
-            <div class>
-                <div class="content">
-                    <h1>Call of Duty</h1>
-                        <p>Call of Duty is owned by Activision which was founded in 1979, The made games like Call of Duty and and Tony Hawk's Pro Skater. Today, the Call of Duty franchise remains one of the top most played games today, with hundres of thousand of players active. It is a players vs players game usually consisting of 5v5 with different game mode such as TDM, FFA, Dominations.</p>
-                        <img src="../../assets/cod.png" alt="Call of Duty" class="picture">
-                        <p>source: <a href="https://www.britannica.com/money/Activision-Blizzard-Inc">Britannica</a></p>
+            <form action="processing.java" method="post">
+                <fieldset>
+                    <legend class="title">Sign Up Form</legend>
+                    <div>
+                        <fieldset class="credentials">
+                            <legend class="title">User Credentials</legend>
+                            <div class="row credentials">
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" required="required">
+                            </div>
+                            <div class="row">
+                                <label for="number">Phone Number:</label>
+                                <input type="tel" id="number" required="required">
+                            </div>
+                            <div class="row">
+                                <label for="birthdate">Birthdate:</label>
+                                <input type="date" id="birthdate">
+                            </div>
+                            <div class="row">
+                                <label for="user">Username:</label>
+                                <input type="text" id="user" required="required">
+                            </div>
+                            <div class="row">
+                                <label for="pass">Password:</label>
+                                <input type="password" id="pass" required="required">
+                            </div>
+                        </fieldset>   
                     </div>
-                <div class="content">
-                    <h1>PUBG</h1>
-                        <p>PUBG is a battle royale game where players can team up together up to a 4 stack and fight with other players to try to remain the last person or party standing. The match usually has 100 players per game and people will start off from a airplane and drop to locations to find weapons, armor, ammunition to survive.</p>
-                        <img src="../../assets/pubg.png" alt="PlayerUnknown's Battlegrounds" class="picture">
-                        <p>source: <a href="https://en.wikipedia.org/wiki/PUBG:_Battlegrounds">Wikipedia</a></p>
+                    <div>
+                        <fieldset>
+                            <legend class="title">Favorite Drinks From List</legend>
+                            <div class="row drink">
+                                    <label for="pepsi"><input type="radio" id="pepsi" name="drinks" required="required">Pepsi</label>
+                                    <label for="coca-cola"><input type="radio" id="coca-cola" name="drinks" required="required">Coca-Cola</label>
+                                    <label for="sprite"><input type="radio" id="sprite" name="drinks" required="required">Sprite</label>
+                                    <label for="drpepper"><input type="radio" id="drpepper" name="drinks" required="required">DrPepper</label>
+                            </div>
+                            <div class="row">
+                                <div class="checkbox">
+                                    <label for="reason">Why is this your favorite drink?</label>
+                                    <textarea name="reason" id="reason" required="required"></textarea>  
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="yesno">Was your Favorite Drink Actually In The List?</label>
+                                <select name="yesno" id="yesno" required="required">
+                                    <option value="">&nbsp;</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </fieldset>
                     </div>
-                <div class="content">
-                    <h1>Counter Strike</h1>
-                        <p>Counter Strike is a competitive multiplayer where 5 players goes against other 5 players. The game is centered around players either trying to prevent the other team from planting and detonating a bomb. Or trying to plant the bomb and preventing the other team from defusing the bomb. It has a massive following and is made by Valve.</p>
-                        <img src="../../assets/counterstrike.png" alt="Counter Strike" class="picture">
-                        <p>source: <a href="https://en.wikipedia.org/wiki/Counter-Strike">Wikipedia</a></p>
+                    <div class="final">
+                        <div class="row remember">
+                            <label for="remember"><input type="checkbox" id="remember">Remember Me</label>
+                        </div>
+                        <div class="row">
+                            <label for="submit"></label>
+                            <input type="submit" id="submit">
+                        </div>
                     </div>
-            </div>
+                </fieldset>
+            </form>
         </main>
     </div>
     <footer>

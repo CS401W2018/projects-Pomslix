@@ -177,4 +177,36 @@ table tbody tr:nth-child(3){
     .welcome{
         width: 90%;
     }
+
+    caption{
+        margin: 10px 5px;
+        width: 420px;
+    }
+
+    thead{
+        display: flex;
+        flex-flow: column;
+    }
+    
+    tbody{
+        display: flex;
+    }
+
+    tfoot{
+        display: flex;
+    }
+
+    th{
+        display: flex;
+    }
+
+    td{
+        display: flex;
+        padding: 2px;
+    }
+
+    .bold{
+        font-weight: bold;
+        text-decoration: underline;
+    }
 }
