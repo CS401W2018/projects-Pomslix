@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../othercodes/finalproject.css">
+    <link rel="stylesheet" href="./finalproject.css">
     <title>Popular Game Show</title>
 </head>
 
@@ -24,8 +24,14 @@
                 <a href="#" class="current">Sign Up Form</a>
             </div>
         </nav>
-        <main>
-            <form action="processing.java" method="post">
+    </div>
+    <main>
+        <div class="headcenter">
+            <h1 class="hd"> Sign Up Page</h1>
+        </div>
+        <div>
+            <div id="message"></div>
+            <form action="processing.html" method="post" id="Form">
                 <fieldset>
                     <legend class="title">Sign Up Form</legend>
                     <div>
@@ -33,48 +39,34 @@
                             <legend class="title">User Credentials</legend>
                             <div class="row credentials">
                                 <label for="email">Email Address:</label>
-                                <input type="email" id="email" name="email" required="required">
+                                <input type="email" id="email" name="email">
                             </div>
                             <div class="row">
                                 <label for="number">Phone Number:</label>
-                                <input type="tel" id="number" required="required">
+                                <input type="tel" id="number">
                             </div>
                             <div class="row">
-                                <label for="birthdate">Birthdate:</label>
-                                <input type="date" id="birthdate">
+                                <label for="age">Age:</label>
+                                <input type="number" id="age">
                             </div>
                             <div class="row">
                                 <label for="user">Username:</label>
-                                <input type="text" id="user" required="required">
+                                <input type="text" id="user">
                             </div>
                             <div class="row">
                                 <label for="pass">Password:</label>
-                                <input type="password" id="pass" required="required">
+                                <input type="password" id="pass">
                             </div>
-                        </fieldset>   
+                        </fieldset>
                     </div>
                     <div>
                         <fieldset>
-                            <legend class="title">Favorite Drinks From List</legend>
-                            <div class="row drink">
-                                    <label for="pepsi"><input type="radio" id="pepsi" name="drinks" required="required">Pepsi</label>
-                                    <label for="coca-cola"><input type="radio" id="coca-cola" name="drinks" required="required">Coca-Cola</label>
-                                    <label for="sprite"><input type="radio" id="sprite" name="drinks" required="required">Sprite</label>
-                                    <label for="drpepper"><input type="radio" id="drpepper" name="drinks" required="required">DrPepper</label>
-                            </div>
+                            <legend class="title">Optionals</legend>
                             <div class="row">
                                 <div class="checkbox">
-                                    <label for="reason">Why is this your favorite drink?</label>
-                                    <textarea name="reason" id="reason" required="required"></textarea>  
+                                    <label for="reason">Feedback on Website</label>
+                                    <textarea name="reason" id="reason"></textarea>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <label for="yesno">Was your Favorite Drink Actually In The List?</label>
-                                <select name="yesno" id="yesno" required="required">
-                                    <option value="">&nbsp;</option>
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
                             </div>
                         </fieldset>
                     </div>
@@ -89,10 +81,11 @@
                     </div>
                 </fieldset>
             </form>
-        </main>
-    </div>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2024 Jameson Shi</p>
     </footer>
+    <script src="./finalproject.js"></script>
 </body>
 </html>
